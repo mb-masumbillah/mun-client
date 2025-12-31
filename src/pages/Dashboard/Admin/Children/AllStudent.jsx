@@ -2,6 +2,7 @@ import useAxiosSecure from "@/hooks/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
 import { useState,  } from "react";
 import { Search, ChevronLeft, ChevronRight, X } from "lucide-react";
+import StudentDetails from "@/components/ui/DashboardUI/StudentDetails";
 
 const AllStudent = () => {
  const axiosSecure = useAxiosSecure()
@@ -168,7 +169,7 @@ const AllStudent = () => {
                 <div className="fixed inset-0 bg-black/30 flex justify-center items-center z-50 p-4">
                     <div className="bg-white rounded-lg shadow-lg max-h-[34rem] overflow-y-auto p-6 relative w-full max-w-3xl">
                         <button className="absolute top-3 right-3 text-gray-500 hover:text-gray-700" onClick={() => setIsModalOpen(false)}><X /></button>
-                        <StudentApprovalDetails student={selectedStudent} handleApprove={handleApprove} handleDelete={handleDelete} />
+                        <StudentDetails student={selectedStudent} />
                     </div>
                 </div>
             )}
