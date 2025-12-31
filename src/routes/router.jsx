@@ -1,10 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainLayoutRoutes } from "./MainLayoutRoutes";
 import { DashboardRoutes } from "./DashboardRoutes";
-import App from "@/app";
 import StudentRegister from "@/pages/Public/Student/StudentRegister";
 import Login from "@/pages/Public/auth/Login";
-import PaymentForm from "@/pages/Dashboard/Student/children/PaymentForm";
 
 const router = createBrowserRouter([
     ...MainLayoutRoutes,
@@ -22,15 +20,10 @@ const router = createBrowserRouter([
     },
 
 
-
-    {
-        path: "/app",
-        element: <App />
-    },
-    {
-        path: "/payment",
-        element: <PaymentForm />
-    },
+    // {
+    //     path: "/payment",
+    //     element: <PaymentForm />
+    // },
     
 
 ])
