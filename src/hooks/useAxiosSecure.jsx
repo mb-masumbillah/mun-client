@@ -5,7 +5,7 @@ import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
   //   baseURL: import.meta.env.VITE_SERVER_URL,
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://mun-poly-server.vercel.app/api/v1",
 });
 
 const useAxiosSecure = () => {

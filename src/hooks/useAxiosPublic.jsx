@@ -3,7 +3,8 @@ import axios from "axios";
 
 const axiosPublic = axios.create({
     //   baseURL: import.meta.env.VITE_SERVER_URL,
-    baseURL: 'http://localhost:5000/api'
+    baseURL: 'https://mun-poly-server.vercel.app/api/v1'
+    // baseURL: 'http://localhost:5000/api/v1'
 });
 
 

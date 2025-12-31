@@ -74,7 +74,6 @@ const StudentRegister = () => {
                         className="bg-white rounded-2xl w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-4"
                     >
 
-
                         <TextInput
                             label="Full Name"
                             name="fullName"
