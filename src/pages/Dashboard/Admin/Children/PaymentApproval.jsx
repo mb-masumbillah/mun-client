@@ -24,7 +24,7 @@ const PaymentApproval = () => {
     const [selectedPayment, setSelectedPayment] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const perPage = 10;
+    const perPage = 10; 
 
     
     const pendingPayment = allPayment?.data?.filter(s => s.status === "pending") || [];
